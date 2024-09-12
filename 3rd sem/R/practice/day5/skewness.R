@@ -1,5 +1,0 @@
-install.packages ("moments")
-library (moments)
-x <- c(35, 37, 40, 41, 42, 43, 55)
-print(skewness(x))
-hist(x)

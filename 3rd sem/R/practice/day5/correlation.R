@@ -1,6 +1,0 @@
-x <- c(1, 3, 5, 10)
-y <- c(2, 4, 6, 20)
-print(cor(x, y))
-print(cor(x, y, method = "pearson"))
-print(cor(x, y, method = "kendall"))
-print(cor(x, y, method = "spearman"))
