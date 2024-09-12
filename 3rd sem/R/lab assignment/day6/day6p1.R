@@ -15,15 +15,15 @@ print("Table (age vs buys_computer):")
 print(t)
 
 # Proportions for age groups
-prop1 <- t[1,] / sum(t[1,])
+prop1 <- t[1, ] / sum(t[1, ])
 print("Proportions for first age group (youth):")
 print(prop1)
 
-prop2 <- t[2,] / sum(t[2,])
+prop2 <- t[2, ] / sum(t[2, ])
 print("Proportions for second age group (middle-aged):")
 print(prop2)
 
-prop3 <- t[3,] / sum(t[3,])
+prop3 <- t[3, ] / sum(t[3, ])
 print("Proportions for third age group (senior):")
 print(prop3)
 
@@ -93,14 +93,14 @@ print(paste("Information gain (e):", e))
 # [1] "Table of buys_computer:"
 # > print(f)
 
-#  no yes 
-#   6   8 
+#  no yes
+#   6   8
 # > # Table for 'age' and 'buys_computer'
 # > t <- table(d$age, d$buys_computer)
 # > print("Table (age vs buys_computer):")
 # [1] "Table (age vs buys_computer):"
 # > print(t)
-             
+
 #               no yes
 #   middle_aged  0   4
 #   senior       3   2
@@ -110,20 +110,20 @@ print(paste("Information gain (e):", e))
 # > print("Proportions for first age group (youth):")
 # [1] "Proportions for first age group (youth):"
 # > print(prop1)
-#  no yes 
-#   0   1 
+#  no yes
+#   0   1
 # > prop2 <- t[2,] / sum(t[2,])
 # > print("Proportions for second age group (middle-aged):")
 # [1] "Proportions for second age group (middle-aged):"
 # > print(prop2)
-#  no yes 
-# 0.6 0.4 
+#  no yes
+# 0.6 0.4
 # > prop3 <- t[3,] / sum(t[3,])
 # > print("Proportions for third age group (senior):")
 # [1] "Proportions for third age group (senior):"
 # > print(prop3)
-#  no yes 
-# 0.6 0.4 
+#  no yes
+# 0.6 0.4
 # > # Entropy calculations for age groups
 # > H1 <- -(prop1[1] * log2(prop1[1])) - (prop1[2] * log2(prop1[2]))
 # > H11 <- ifelse(is.na(H1), 0, H1)
