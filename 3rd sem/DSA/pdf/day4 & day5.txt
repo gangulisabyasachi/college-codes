@@ -1,0 +1,15 @@
+Implement a Singly Linked List of integers.
+
+1. addFront(x): Add an element x to the front of a singly linked list.
+2. addEnd(x): Add an element x to the end of a singly linked list.
+3. addPos(i,x): Add an element x at the i-h position of a singly linked list
+4. delPos(i): Remove the i-th element from a singly linked list.
+5. delFront(): Remove the element at the start of a singly linked list
+6. delEnd(): Remove the element at the end of a singly linked list
+7. delOne(x): Remove one occurrence of x from a singly linked list
+8. delAll(x): Remove all occurrences of x from a singly linked list
+9. retFront(i): Return the i-th element from the start of a singly linked list
+10. retEnd(i):: Return the i-th element from the start of a singly linked list  
+11. retMid():- Return the middle  element of a list for even no of element return the left one.
+12. delMid():- Delete the mid element of a list for even no of element return the left one.
+13. delEndPos():- Delete the i th element  from the end. 
