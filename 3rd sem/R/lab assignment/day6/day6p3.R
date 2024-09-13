@@ -38,6 +38,11 @@ ComputeGini <- function(x, y) {
 ComputeGini(d$income, d$buys_computer)
 
 
+
+
+
+
+
 # output
 
 # > # Function to compute Gini Index for a given proportion

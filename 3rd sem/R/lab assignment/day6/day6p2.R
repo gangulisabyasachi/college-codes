@@ -36,6 +36,12 @@ Compute <- function(x, y) {
 Compute(d$income, d$buys_computer)
 
 
+
+
+
+
+
+
 # output
 # # General function for xx, r, and e computation for any variable
 # > Compute <- function(x, y) {
