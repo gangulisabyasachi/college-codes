@@ -1,4 +1,0 @@
-This is a lab assignment based on Regular expression.
-I am doing it.
-This is very easy.
-This is very helpful for understanding Regular expression.
