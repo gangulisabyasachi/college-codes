@@ -1,0 +1,3 @@
+That is a lab assignment based on Regular expression.
+That is very easy.
+That is very helpful for understanding Regular expression.
