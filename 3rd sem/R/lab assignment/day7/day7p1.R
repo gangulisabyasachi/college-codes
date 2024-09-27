@@ -15,7 +15,7 @@ typeof(d[1])
 class(d[1])
 typeof(d[,1])
 class(d[,1])
-is.list(d)
+is.list(d)  
 is.vector(d)
 is.data.frame(d)
 is.list(d)
@@ -33,9 +33,3 @@ as.data.frame(l)
 l= list(1,2,3)
 l
 as.data.frame(l)
-
-
-
-
-
-
