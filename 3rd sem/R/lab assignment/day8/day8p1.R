@@ -27,7 +27,7 @@ cc <- d[, c(vars, target_var)]
 # Function to evaluate the model
 evaluate_model <- function(train_data, test_data, vars, target_var) {
   tree_mod <- C5.0(x = train_data[, vars], y = factor(train_data[[target_var]]))
-  plot(tree_mod)
+  # plot(tree_mod)
   predict_train <- predict(tree_mod, newdata = train_data, type = "class")
   strain <- table(train_data[[target_var]], predict_train, dnn = c("Actual", "Predicted"))
   

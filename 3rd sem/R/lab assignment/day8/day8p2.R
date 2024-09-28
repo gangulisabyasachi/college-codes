@@ -31,7 +31,7 @@ cc <- d[, c(vars, target_var)]
 evaluate_model <- function(train_data, test_data, vars, target_var) {
   # Decision Tree model
   tree_mod <- C5.0(x = train_data[, vars], y = factor(train_data[[target_var]]))
-  plot(tree_mod)  # Plot decision tree
+  # plot(tree_mod)  # Plot decision tree
   
   # Predictions for decision tree
   predict_train_tree <- predict(tree_mod, newdata = train_data, type = "class")
