@@ -1,0 +1,13 @@
+Write a C program with the following features:
+
+1. Build Max Heap and Perform Heap Sort:
+
+    Input an unsorted array, build a max heap, and sort it using heap sort. Display the sorted array.
+
+2. Merge K Sorted Arrays Using Min Heap:
+
+    Input k sorted arrays, merge them into a single sorted array using a min-heap, and display the merged array.
+
+3. Menu-Driven Interface:
+
+    Provide options to perform heap sort, merge sorted arrays, or exit.
