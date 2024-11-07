@@ -13,7 +13,7 @@ with open(cities_filename, 'w') as file:
         file.write(city + '\n')
 
 print(f"'cities.txt' has been created in the day5 folder.")
-
+    
 # Function to copy the source file to the destination
 def copy_file(source, destination):
     try:

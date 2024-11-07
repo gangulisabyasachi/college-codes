@@ -10,7 +10,7 @@ else:
     print("Sum:", num1 + num2)
 
 '''
-Output
-D:\code\college codes\3rd sem\Python\day2>python day2p2.py 5 6
-Sum: 11
+# Output
+# /Users/sabyasachiganguli/Desktop/code/college codes/3rd sem/Python/day2/day2p2.py>python day2p2.py 5 6
+# Sum: 11
 '''

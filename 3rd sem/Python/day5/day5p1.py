@@ -1,19 +1,17 @@
-def count_lines_and_characters(filename):
-    try:
-        with open(filename, 'r') as file:
-            lines = file.readlines()
-            line_count = len(lines)
-            char_count = sum(len(line) for line in lines)
-            print(f"Number of lines: {line_count}")
-            print(f"Number of characters: {char_count}")
-    except FileNotFoundError:
-        print("File not found. Please check the filename and try again.")
-
-filename = input("Enter the filename (with path if not in current directory): ")
-count_lines_and_characters(filename)
-
+# Define the path to the file
+file_path = '/Users/sabyasachiganguli/Desktop/code/college codes/3rd sem/Python/day5/file1.txt'
+# Initialize counters
+line_count = 0
+char_count = 0
+# Open the file and process it line by line
+with open(file_path, 'r') as file:
+    for line in file:
+        line_count += 1 # Increment the line count
+        char_count += len(line) # Add the length of the line to the character count
+# Print the results
+print(f"Number of lines: {line_count}")
+print(f"Number of characters: {char_count}")
 
 # output
-# Enter the filename (with path if not in current directory): /Users/sabyasachiganguli/Desktop/code/college codes/3rd sem/Python/day5/file1.txt
 # Number of lines: 2
 # Number of characters: 25
