@@ -3,20 +3,20 @@
 #include <string.h>
 #include <ctype.h>
 
-// Node structure
+// Node structure for deque
 struct Node {
     char data;
     struct Node* next;
     struct Node* prev;
 };
 
-// Deque structure
+// Deque structure with front and rear pointers
 struct Deque {
     struct Node* front;
     struct Node* rear;
 };
 
-// Create a new node
+// Function to create a new node
 struct Node* createNode(char data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
@@ -24,107 +24,112 @@ struct Node* createNode(char data) {
     return newNode;
 }
 
-// Initialize deque
+// Function to initialize deque
 struct Deque* createDeque() {
     struct Deque* deque = (struct Deque*)malloc(sizeof(struct Deque));
     deque->front = deque->rear = NULL;
     return deque;
 }
 
-// Add character to the front
+// Function to add an element at the front of the deque
 void addFront(struct Deque* deque, char data) {
     struct Node* newNode = createNode(data);
-    if (!deque->front) {
+    if (deque->front == NULL) {
         deque->front = deque->rear = newNode;
     } else {
         newNode->next = deque->front;
         deque->front->prev = newNode;
         deque->front = newNode;
     }
-    printf("Added %c to the front.\n", data);
+    printf("Added %c to the front of the deque.\n", data);
 }
 
-// Add character to the rear
+// Function to add an element at the rear of the deque
 void addRear(struct Deque* deque, char data) {
     struct Node* newNode = createNode(data);
-    if (!deque->rear) {
+    if (deque->rear == NULL) {
         deque->front = deque->rear = newNode;
     } else {
         newNode->prev = deque->rear;
         deque->rear->next = newNode;
         deque->rear = newNode;
     }
-    printf("Added %c to the rear.\n", data);
+    printf("Added %c to the rear of the deque.\n", data);
 }
 
-// Remove character from the front
+// Function to remove an element from the front of the deque
 char removeFront(struct Deque* deque) {
-    if (!deque->front) return '\0';
+    if (deque->front == NULL) {
+        printf("Deque is empty!\n");
+        return '\0';
+    }
     struct Node* temp = deque->front;
     char data = temp->data;
     deque->front = deque->front->next;
-    if (deque->front) deque->front->prev = NULL;
-    else deque->rear = NULL;
+    if (deque->front == NULL) {
+        deque->rear = NULL;
+    } else {
+        deque->front->prev = NULL;
+    }
     free(temp);
+    printf("Removed %c from the front of the deque.\n", data);
     return data;
 }
 
-// Remove character from the rear
+// Function to remove an element from the rear of the deque
 char removeRear(struct Deque* deque) {
-    if (!deque->rear) return '\0';
+    if (deque->rear == NULL) {
+        printf("Deque is empty!\n");
+        return '\0';
+    }
     struct Node* temp = deque->rear;
     char data = temp->data;
     deque->rear = deque->rear->prev;
-    if (deque->rear) deque->rear->next = NULL;
-    else deque->front = NULL;
+    if (deque->rear == NULL) {
+        deque->front = NULL;
+    } else {
+        deque->rear->next = NULL;
+    }
     free(temp);
+    printf("Removed %c from the rear of the deque.\n", data);
     return data;
 }
 
-// Display the contents of the deque
-void display(struct Deque* deque) {
-    if (!deque->front) {
-        printf("Deque is empty!\n");
-        return;
-    }
-    struct Node* current = deque->front;
-    printf("Deque contents: ");
-    while (current) {
-        printf("%c ", current->data);
-        current = current->next;
-    }
-    printf("\n");
-}
+// Function to check if a string is a palindrome using deque
+int isPalindrome(char* str) {
+    int len = strlen(str);
+    struct Deque* deque = createDeque();
 
-// Check if the deque forms a palindrome
-int isPalindrome(struct Deque* deque) {
-    struct Node* left = deque->front;
-    struct Node* right = deque->rear;
-    while (left && right && left != right && left->prev != right) {
-        if (left->data != right->data) {
+    // Add all characters to the deque
+    for (int i = 0; i < len; i++) {
+        if (isalnum(str[i])) {
+            addRear(deque, tolower(str[i]));  // Add lowercased alphanumeric characters
+        }
+    }
+
+    // Check palindrome by comparing front and rear characters
+    while (deque->front != NULL && deque->rear != NULL && deque->front != deque->rear) {
+        char frontChar = removeFront(deque);
+        char rearChar = removeRear(deque);
+        if (frontChar != rearChar) {
             return 0;  // Not a palindrome
         }
-        left = left->next;
-        right = right->prev;
     }
     return 1;  // Is a palindrome
 }
 
-// Menu-driven program
-int main() {
+// Menu-driven function for deque operations
+void dequeMenu() {
     struct Deque* deque = createDeque();
     int choice;
     char element;
 
     do {
-        printf("\nMenu:\n");
-        printf("1. Add Front\n");
+        printf("\n1. Add Front\n");
         printf("2. Add Rear\n");
         printf("3. Remove Front\n");
         printf("4. Remove Rear\n");
-        printf("5. Display\n");
-        printf("6. Check Palindrome\n");
-        printf("7. Exit\n");
+        printf("5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -140,38 +145,60 @@ int main() {
                 addRear(deque, element);
                 break;
             case 3:
-                element = removeFront(deque);
-                if (element != '\0') {
-                    printf("Removed %c from the front.\n", element);
-                } else {
-                    printf("Deque is empty!\n");
-                }
+                removeFront(deque);
                 break;
             case 4:
-                element = removeRear(deque);
-                if (element != '\0') {
-                    printf("Removed %c from the rear.\n", element);
-                } else {
-                    printf("Deque is empty!\n");
-                }
+                removeRear(deque);
                 break;
             case 5:
-                display(deque);
+                printf("Exiting deque menu.\n");
                 break;
-            case 6:
-                if (isPalindrome(deque)) {
-                    printf("The deque forms a palindrome.\n");
-                } else {
-                    printf("The deque does not form a palindrome.\n");
-                }
+            default:
+                printf("Invalid choice! Try again.\n");
+        }
+    } while (choice != 5);
+}
+
+// Menu-driven function for palindrome check
+void palindromeMenu() {
+    char str[100];
+
+    printf("Enter a string to check if it is a palindrome: ");
+    scanf(" %[^\n]s", str);
+
+    if (isPalindrome(str)) {
+        printf("The string \"%s\" is a palindrome.\n", str);
+    } else {
+        printf("The string \"%s\" is not a palindrome.\n", str);
+    }
+}
+
+// Main menu for both deque operations and palindrome check
+int main() {
+    int choice;
+
+    do {
+        printf("\nMenu:\n");
+        printf("1. Deque Operations\n");
+        printf("2. Palindrome Check\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                dequeMenu();
                 break;
-            case 7:
+            case 2:
+                palindromeMenu();
+                break;
+            case 3:
                 printf("Exiting the program.\n");
                 break;
             default:
-                printf("Invalid choice! Please try again.\n");
+                printf("Invalid choice! Try again.\n");
         }
-    } while (choice != 7);
+    } while (choice != 3);
 
     return 0;
 }
