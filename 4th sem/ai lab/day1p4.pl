@@ -1,0 +1,1 @@
+is_even(X):- V is X mod 2, V==0.
