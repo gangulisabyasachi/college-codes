@@ -1,0 +1,7 @@
+Running: xsim.dir/HFADD_TBW_behav/xsimk.exe -simmode gui -wdb HFADD_TBW_behav.wdb -simrunnum 0 -socket 52746
+Design successfully loaded
+Design Loading Memory Usage: 21656 KB (Peak: 21656 KB)
+Design Loading CPU Usage: 249 ms
+Simulation completed
+Simulation Memory Usage: 21748 KB (Peak: 21748 KB)
+Simulation CPU Usage: 249 ms

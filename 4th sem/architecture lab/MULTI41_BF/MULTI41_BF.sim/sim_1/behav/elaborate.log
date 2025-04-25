@@ -1,0 +1,14 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 617312d88702457794707e3f0c2771a1 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MULTI41_BF_TBW_behav xil_defaultlib.MULTI41_BF_TBW -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.MULTI41_BF [multi41_bf_default]
+Compiling architecture behavioral of entity xil_defaultlib.multi41_bf_tbw
+Built simulation snapshot MULTI41_BF_TBW_behav

@@ -1,0 +1,7 @@
+Running: xsim.dir/XNOR_IF_TBW_behav/xsimk.exe -simmode gui -wdb XNOR_IF_TBW_behav.wdb -simrunnum 0 -socket 52369
+Design successfully loaded
+Design Loading Memory Usage: 22360 KB (Peak: 22360 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 22716 KB (Peak: 22716 KB)
+Simulation CPU Usage: 171 ms

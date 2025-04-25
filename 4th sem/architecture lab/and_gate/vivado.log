@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Mar 03 09:22:08 2025
+# Process ID: 6612
+# Current directory: D:/sabyasachi_005/and_gate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent820 D:\sabyasachi_005\and_gate\and_gate.xpr
+# Log file: D:/sabyasachi_005/and_gate/vivado.log
+# Journal file: D:/sabyasachi_005/and_gate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project D:/sabyasachi_005/and_gate/and_gate.xprScanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.oopen_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 782.438 ; gain = 129.66upupdate_compile_order -fileset sources_exexit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 03 09:28:31 2025...

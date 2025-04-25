@@ -1,0 +1,1 @@
+-wto "7d9cc5441b774990b9562d209ab1430c" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "XNOR_GATE_TBW_behav" "xil_defaultlib.XNOR_GATE_TBW" -log "elaborate.log" 

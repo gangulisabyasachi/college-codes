@@ -1,0 +1,1 @@
+-wto "f45dc8a9526f46d0a19ad2c095858e75" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "FULLADD_TBW_behav" "xil_defaultlib.FULLADD_TBW" -log "elaborate.log" 

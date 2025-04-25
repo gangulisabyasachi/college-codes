@@ -1,0 +1,7 @@
+Running: xsim.dir/FULL_ADDER_STRUCTURAL_TBW_behav/xsimk.exe -simmode gui -wdb FULL_ADDER_STRUCTURAL_TBW_behav.wdb -simrunnum 0 -socket 55232
+Design successfully loaded
+Design Loading Memory Usage: 22152 KB (Peak: 22152 KB)
+Design Loading CPU Usage: 187 ms
+Simulation completed
+Simulation Memory Usage: 22508 KB (Peak: 22508 KB)
+Simulation CPU Usage: 187 ms

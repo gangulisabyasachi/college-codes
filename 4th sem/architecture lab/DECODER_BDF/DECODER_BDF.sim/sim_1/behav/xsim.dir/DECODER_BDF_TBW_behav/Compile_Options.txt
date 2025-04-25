@@ -1,0 +1,1 @@
+-wto "b39f5450797a4b6b96cfdf70a78b92da" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "DECODER_BDF_TBW_behav" "xil_defaultlib.DECODER_BDF_TBW" -log "elaborate.log" 

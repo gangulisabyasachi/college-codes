@@ -1,0 +1,7 @@
+Running: xsim.dir/NOT_Gate_tbw_behav/xsimk.exe -simmode gui -wdb NOT_Gate_tbw_behav.wdb -simrunnum 0 -socket 51443
+Design successfully loaded
+Design Loading Memory Usage: 22368 KB (Peak: 22368 KB)
+Design Loading CPU Usage: 203 ms
+Simulation completed
+Simulation Memory Usage: 22604 KB (Peak: 22604 KB)
+Simulation CPU Usage: 218 ms

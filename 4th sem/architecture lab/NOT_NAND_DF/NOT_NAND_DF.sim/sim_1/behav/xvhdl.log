@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/sabyasachi_005/NOT_NAND_DF/NOT_NAND_DF.srcs/sources_1/new/NOT_NAND_DF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT_NAND_DF
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/sabyasachi_005/NOT_NAND_DF/NOT_NAND_DF.srcs/sim_1/new/NOT_NAND_TBW.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT_NAND_TBW

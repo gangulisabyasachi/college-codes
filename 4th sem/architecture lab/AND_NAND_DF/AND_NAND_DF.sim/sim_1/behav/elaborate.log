@@ -1,0 +1,14 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 3958ba52d1e4495b809484d5bc5448ae --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AND_NAND_TBW_behav xil_defaultlib.AND_NAND_TBW -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture dataflow of entity xil_defaultlib.AND_NAND_DF [and_nand_df_default]
+Compiling architecture dataflow of entity xil_defaultlib.and_nand_tbw
+Built simulation snapshot AND_NAND_TBW_behav

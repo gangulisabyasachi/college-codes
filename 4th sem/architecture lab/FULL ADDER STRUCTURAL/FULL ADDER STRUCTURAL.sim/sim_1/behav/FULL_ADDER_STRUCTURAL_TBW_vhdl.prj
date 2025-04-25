@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../FULL ADDER STRUCTURAL.srcs/sources_1/imports/sabyasachi_005/OR_Gate/OR_Gate.srcs/sources_1/new/OR_Gate.vhd"
+vhdl xil_defaultlib  "../../../FULL ADDER STRUCTURAL.srcs/sources_1/imports/sabyasachi_005/HFADD_DF/HFADD_DF.srcs/sources_1/new/HFADD_DF.vhd"
+vhdl xil_defaultlib  "../../../FULL ADDER STRUCTURAL.srcs/sources_1/new/FULL ADDER STRUCT.vhd"
+vhdl xil_defaultlib  "../../../FULL ADDER STRUCTURAL.srcs/sim_1/new/FULL_ADDER_STRUCTURAL_TBW.vhd"
+
+# Do not sort compile order
+nosort
